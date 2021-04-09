@@ -1,0 +1,158 @@
+  .circular {
+      margin: 10%;
+      height: 100px;
+      width: 100px;
+      background: #dde6f0;
+      position: relative;
+      transform: scale(1);
+      border-radius: 100%;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+  }
+  
+  .circular .inner {
+      position: absolute;
+      z-index: 6;
+      top: 50%;
+      left: 50%;
+      height: 80px;
+      width: 80px;
+      margin: -40px 0 0 -40px;
+      background: #A3D2CA;
+      border-radius: 100%;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  }
+  
+  .circular .numb {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+  }
+  
+  
+  .circular .bar {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      border-radius: 100%;
+      clip: rect(0px, 100px, 100px, 50px);
+  }
+  
+  .circle .bar .progress {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+      clip: rect(0px, 50px, 100px, 0px);
+      background: #4158d0;
+  }
+  
+  
+  /*************** skill0 */
+  .circle .left .progress {
+      z-index: 1;
+      animation: left 2s linear both;
+  }
+  
+  @keyframes left {
+      100%{
+          transform: rotate(180deg);
+      }
+  }
+  
+  .circle .right {
+      z-index: 3;
+      transform: rotate(180deg);
+  }
+  
+  .circle .right .progress {
+      animation: right 2s linear both;
+      animation-delay: 2s;
+  }
+  
+  @keyframes right {
+      100% {
+          transform: rotate(180deg);
+      }
+  }
+  
+  
+  /* skill1 *********************/
+  .circle .left1 .progress {
+      z-index: 1;
+      animation: left 2s linear both;
+  }
+  
+  @keyframes left1 {
+      80%{
+          transform: rotate(180deg);
+      }
+  }
+  
+  .circle .right1 {
+      z-index: 3;
+      transform: rotate(108deg);
+      background: #fff;
+  }
+  
+  .circle .right1 .progress {
+      animation: right 2s linear both;
+      animation-delay: 1.2s;
+  }
+  
+  @keyframes right1 {
+      80% {
+          transform: rotate(180deg);
+      }
+  }
+  
+  
+  /******************** skill2 */
+  .circle .left2 .progress {
+      z-index: 1;
+      animation: left 2s linear both;
+  }
+  
+  @keyframes left2 {
+      50%{
+          transform: rotate(180deg);
+      }
+  }
+  
+  .circle .right2 {
+      z-index: 3;
+      transform: rotate(0deg);
+  }
+  
+  
+  /* skill3 ***********************/
+  .circle .left3 .progress {
+      z-index: 1;
+      animation: left 3s linear both;
+  }
+  
+  @keyframes left3 {
+      90%{
+          transform: rotate(180deg);
+      }
+  }
+  
+  .circle .right3 {
+      z-index: 3;
+      transform: rotate(144deg);
+      background: #fff;
+  }
+  
+  .circle .right3 .progress {
+      animation: right 3s linear both;
+      animation-delay: 2.4s;
+  }
+  
+  @keyframes right3 {
+      90% {
+          transform: rotate(180deg);
+      }
+  }
+  
